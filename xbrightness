@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# the issue fixed with xbacklight application, 
+# and mapping the media keys with xbindkeys
+# however, this is here just in case.
+
 set -e
 brightness_file="/sys/class/backlight/intel_backlight/brightness"
 current_brightness=$(cat "$brightness_file")
