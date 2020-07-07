@@ -1,0 +1,8 @@
+#!/bin/bash
+USAGE_MSG="Usage:   $0 <passphrase>"
+
+PW=$1
+[ $# -gt 1 ] && echo $USAGE_MSG && exit 1
+
+ssh-agent bash
+ssh-add 
